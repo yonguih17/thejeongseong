@@ -1008,7 +1008,6 @@ img {
     grid-template-columns: 1fr;
   }
 
-  /* 🔥 compare 부분 (여기만 중요) */
   .compare-row {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -1024,8 +1023,11 @@ img {
     grid-column: auto;
   }
 
+  .compare-or-row .or-text:last-child {
+    display: none;
+  }
+
   .compare-arrow {
-    transform: rotate(90deg);
     font-size: 40px;
   }
 
@@ -1038,7 +1040,7 @@ img {
   }
 
   .or-text {
-    font-size: 22px;
+    font-size: 34px;
   }
 }
 
