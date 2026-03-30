@@ -1028,8 +1028,18 @@ img {
   }
 
   .compare-arrow {
-    font-size: 40px;
+    font-size: 0; /* 기존 → 숨기기 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+.compare-arrow::after {
+  content: "↓"; /* 모바일용 화살표 */
+  font-size: 32px;
+  color: #7c3aed;
+  font-weight: 800;
+}
 
   .compare-item {
     min-height: auto;
